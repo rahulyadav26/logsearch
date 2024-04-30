@@ -53,9 +53,9 @@ The response contains the count of matched log lines and an array of the matched
 5. amazonproperties.s3.bucket.name: Name of s3 bucket
 
 Dummy env variables:
-server.port=8082
-amazonproperties.s3.access.key.id=abc
-amazonproperties.s3.secret.key=abc
-amazonproperties.region=abc
-amazonproperties.s3.bucket.name=abc
+1. server.port=8082
+2. amazonproperties.s3.access.key.id=abc
+3. amazonproperties.s3.secret.key=abc
+4. amazonproperties.region=abc
+5. amazonproperties.s3.bucket.name=abc
 
