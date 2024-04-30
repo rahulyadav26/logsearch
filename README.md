@@ -1,12 +1,12 @@
 
-Log Search API Service
+#Log Search API Service
 This service provides a RESTful API to search log files stored in AWS S3 storage, based on specified criteria. It allows users to search for log lines containing a specific keyword within a specified time range.
 
-Assumptions:
+#Assumptions:
 1. Latency is not an issue.
 2. Not added support for and/or operations, user can only search one keyword
 
-Instructions:
+#Instructions:
 Follow these steps to build and run the service:
 
 1. Clone this repository: git clone https://github.com/rahulyadav26/logsearch.git
@@ -16,7 +16,7 @@ Follow these steps to build and run the service:
 5. Build and run the service using Spring Boot: mvn spring-boot:run
 6. Access the API endpoints to search for log lines using the provided search criteria.
 
-Example:
+#Example:
 Suppose the log data is stored in an AWS S3 bucket named app-logs-bucket with the following folder structure:
 - 2023-11-25
   - 01.txt
@@ -45,7 +45,7 @@ This will return a response similar to the following:
 }
 The response contains the count of matched log lines and an array of the matched log lines.
 
-Environment variables to be configured:
+#Environment variables to be configured:
 1. server.port: Port on which you want to run the application
 2. amazonproperties.s3.access.key.id: Access key id of user to access the s3 bucket
 3. amazonproperties.s3.secret.key: Secret key of user to access the s3 bucket.
