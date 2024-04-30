@@ -6,7 +6,7 @@ Assumptions:
 1. Latency is not an issue.
 2. Not added support for and/or operations, user can only search one keyword
 
-Instructions
+Instructions:
 Follow these steps to build and run the service:
 
 1. Clone this repository: git clone https://github.com/rahulyadav26/logsearch.git
@@ -16,7 +16,7 @@ Follow these steps to build and run the service:
 5. Build and run the service using Spring Boot: mvn spring-boot:run
 6. Access the API endpoints to search for log lines using the provided search criteria.
 
-Example
+Example:
 Suppose the log data is stored in an AWS S3 bucket named app-logs-bucket with the following folder structure:
 - 2023-11-25
   - 01.txt
@@ -26,6 +26,7 @@ Suppose the log data is stored in an AWS S3 bucket named app-logs-bucket with th
   - 01.txt
   - 02.txt
   - 14.txt
+    
 To search for the text "abc" between 1st November 2023 and 31st November 2023, you can make a sample curl request to the API endpoint:
 curl --location 'localhost:8082/search/logs' \
 --header 'Content-Type: application/json' \
